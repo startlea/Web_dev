@@ -4,3 +4,73 @@ body {
   font-family: "Soligant", sans-serif;
   background: #FCF1EF;
 }
+input[type=text], select, textarea {
+width: 50%; /* Full width */
+padding: 12px; /* Some padding */
+border: 1px solid #ccc; /* Gray border */
+border-radius: 4px; /* Rounded borders */
+box-sizing: border-box; /* Make sure that padding and width stays in place */
+margin-top: 6px; /* Add a top margin */
+margin-bottom: 16px; /* Bottom margin */
+resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+font-family: "Soligant", sans-serif;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+background-color: #0099ff;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-family: "Soligant", sans-serif;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #E5BABF;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+border-radius: 5px;
+background-color: #fff;
+padding: 20px;
+text-align: center;
+font-family: "Soligant", sans-serif;
+}
+
+/*========BIO======*/
+
+.bio {
+  margin-bottom: 60px;
+  align-items: center;
+  align-text: center;
+}
+
+.bio-title {
+  font-size: 45px;
+  line-height: 2;
+  margin-bottom: 20px;
+  margin-top: 100px;
+  color: #556945;
+  position: center;
+}
+
+.bio-occupation {
+  margin-bottom: 20px;
+  color: #556945;
+}
+
+.bio-occupation {
+  font-size: 14px;
+  line-height: 1.714;
+}
+
+.bio-about-me {
+
+  color: #556945;
+  font-size: 20px;
+  line-height: 1.714;
+}
