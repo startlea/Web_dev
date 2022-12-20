@@ -75,27 +75,6 @@ font-family: "Soligant", sans-serif;
   line-height: 1.714;
 }
 
-/* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
-  float: left;
-  width: 28.33%;
-  padding: 20px;
-}
-
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-*{transition:all 0.3s ease-in-out;}
-
-.container{
-  clear:both;
-  overflow:auto;
-}
-
 
 /* Home Page CSS */
 
@@ -448,6 +427,55 @@ padding: 100px;
     padding: 100px;
 }
 
+/* Service page  CSS */
 
+.photo1{
+  flex: 50%; /* Set the width of the sidebar */
+  padding: 40px; /* Some padding */
+  background-color: white;
+}
+
+.servicepagesideblock {
+  flex: 50%; /* Set the width of the main content */
+  background-color: white; /* White background color */
+  padding: 40x; /* Some padding */
+  align: left;
+}
+
+.secondbox{
+align: center;
+padding: 40px;
+}
+.servicepagesideblock1 {
+  flex: 50%; /* Set the width of the main content */
+  padding: 40x; /* Some padding */
+  align: left;
+}
+
+.photo2 {
+  flex: 50%; /* Set the width of the sidebar */
+  padding: 20px; /* Some padding */
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 28.33%;
+  padding: 20px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+*{transition:all 0.3s ease-in-out;}
+
+.container{
+  clear:both;
+  overflow:auto;
+}
 
 
