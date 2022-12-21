@@ -499,7 +499,14 @@ padding: 100px;
     background: #BDCAC5;
     color: #FCF1EF;
     text-align: center;
-    padding: 100px;
+    padding: 10px;
+}
+
+#second-footer{
+    background: #FCF1EF;
+    color: #BDCAC5;
+    text-align: center;
+    padding: 10px;
 }
 
 /* Service page  CSS */
@@ -514,17 +521,17 @@ padding: 100px;
   flex: 50%; /* Set the width of the main content */
   background-color: white; /* White background color */
   padding: 40x; /* Some padding */
-  align: left;
+  align-content: left;
 }
 
 .secondbox{
-align: center;
+align-items: center;
 padding: 40px;
 }
 .servicepagesideblock1 {
   flex: 50%; /* Set the width of the main content */
   padding: 40x; /* Some padding */
-  align: left;
+  align-items: left;
 }
 
 .photo2 {
