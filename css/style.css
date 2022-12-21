@@ -1,24 +1,225 @@
+body{
+    background:#FCF1EF;
+    color: #556945;
+    font-family: Soligant,serif;
+    font-size: 16px;
+    font-weight: normal;
+    margin:0 ;
+}
+
+@font-face {
+    font-family: "Soligant", sans-serif;
+    src: url(Soligant.ttf);
+}
+
 body {
   background-color: #FCF1EF;
   padding: 20px;
   font-family: "Soligant", sans-serif;
   background: #FCF1EF;
 }
+
+
+/*=====Nav bar=====*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #fff;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.nav__links a,
+.cta,
+.overlay__content a {
+  font-family: "Soligant", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: #E5BABF;
+  text-decoration: none;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+}
+
+.nav__links li {
+  padding: 0px 20px;
+  text-align: center;
+}
+
+.nav__links li a {
+  transition: color 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #556945;
+}
+
+.cta {
+  padding: 9px 25px;
+  background-color: #556945;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease 0s;
+  color: #fff;
+}
+
+.cta:hover {
+  background-color: #E5BABF;
+}
+
+/* Mobile Nav */
+
+.menu {
+  display: none;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #FCF1EF;
+  overflow-x: hidden;
+  transition: width 0.5s ease 0s;
+}
+
+.overlay--active {
+  width: 100%;
+}
+
+.overlay__content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay a {
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: color 0.3s ease 0s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #BDCAC5;
+}
+.overlay .close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #556945;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .nav__links,
+  .cta {
+    display: none;
+  }
+  .menu {
+    display: initial;
+  }
+}
+
+
+
+/*========Text======*/
+
+.bio {
+  margin-bottom: 60px;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  font-size: 45px;
+  line-height: 2;
+  margin-bottom: 20px;
+  margin-top: 100px;
+  color: #556945;
+  position: center;
+}
+
+.page-text {
+  color: #556945;
+  font-size: 16px;
+  line-height: 1.714;
+  font-family: "Arial", sans-serif;
+  font-style: italic;
+}
+
+/*=====Form=====*/
+
+/* Style the form - display items horizontally */
+.form-inline {
+  display: flex;
+  width: 50%;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+/* Add some margins for each label */
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+@media (max-width: 500px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+
+  .form-inline {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 input[type=text], select, textarea {
-width: 50%; /* Full width */
+width: 100%; /* Full width */
 padding: 12px; /* Some padding */
 border: 1px solid #ccc; /* Gray border */
 border-radius: 4px; /* Rounded borders */
 box-sizing: border-box; /* Make sure that padding and width stays in place */
 margin-top: 6px; /* Add a top margin */
 margin-bottom: 16px; /* Bottom margin */
-resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 font-family: "Soligant", sans-serif;
 }
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-background-color: #0099ff;
+background-color: #556945;
 color: white;
 padding: 12px 20px;
 border: none;
@@ -33,71 +234,41 @@ input[type=submit]:hover {
 }
 
 /* Add a background color and some padding around the form */
-.container {
+.form-container {
+max-width: 500px;
 border-radius: 5px;
 background-color: #fff;
 padding: 20px;
 text-align: center;
+display: block;
 font-family: "Soligant", sans-serif;
 }
 
-/*========BIO======*/
-
-.bio {
-  margin-bottom: 60px;
-  align-items: center;
-  align-text: center;
-}
-
-.bio-title {
-  font-size: 45px;
-  line-height: 2;
-  margin-bottom: 20px;
-  margin-top: 100px;
-  color: #556945;
-  position: center;
-}
-
-.bio-occupation {
-  margin-bottom: 20px;
-  color: #556945;
-}
-
-.bio-occupation {
-  font-size: 14px;
-  line-height: 1.714;
-}
-
-.bio-about-me {
-
-  color: #556945;
-  font-size: 20px;
-  line-height: 1.714;
-}
+/*=====Main Page=====*/
 
 
-/* Home Page CSS */
-
-@font-face {
-    font-family:Soligant ;
-    src: url(Soligant.ttf);
-}
-
-* { 
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body{
-    background:#FCF1EF;
+#navbar{
+    background-color:#FCF1EF;
     color: #556945;
-
-    font-family: Soligant,serif;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#navbar ul{
+    padding:0;
+    list-style:none;
+}
+#navbar li{
+    display:inline;
+}
+#navbar a{
+    color: #556945;
+    text-decoration: none;
     font-size: 16px;
-    font-weight: normal;
-    
-    margin:0 ;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+#navbar li a:hover {
+    color: #BDCAC5;
 }
 
 .button{
@@ -109,18 +280,11 @@ body{
     text-align: center;
     text-decoration: none;
     justify-content: center;
-   
+    font-family: Arial, Helvetica, sans-serif;
 }
-
 .button:hover{
-    background-color: #edebe7;
+    background-color: #EDEBE7;
     color: #556945;
-}
-
-#main-header{
-    background-color:#FCF1EF;
-    color: #556945;
-    text-align: center;
 }
 
 .container{
@@ -131,76 +295,14 @@ body{
     align-items: center;
     justify-content: center;
 }
-
 .container-1{
     width: 100%;
     margin: auto;
     overflow: hidden;
 }
-
 .clr{
     clear: both;
 }
-
-header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 30px 10%;
-}
-
-.logo {
-    cursor:pointer;
-    margin-right: auto;
-    width: 160px;
-    height: 160px;
-}
-
-
-#navbar{
-    background-color:#FCF1EF;
-    color: #556945;
-    text-align: center;
-}
-
-#navbar ul{
-    padding:0;
-    list-style:none;
-}
-
-#navbar li{
-    display:inline;
-}
-
-#navbar a{
-    color: #556945;
-    text-decoration: none;
-    font-size: 16px;
-    padding-right: 50px;
-    padding-left: 50px;
-}
-
-#navbar li a:hover {
-    color: #BDCAC5;
-}
-
-.cta {
-    padding: 9px 25px;
-    background-color: #E5BABF ;
-    color: #FCF1EF;
-    border: none;
-    border-radius: none;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    text-decoration: none;
-    list-style: none;
-    margin-left: 50px;
-}
-
-.cta:hover {
-    background-color: #BDCAC5 ;
-}
-
 
 #main-block{
     float: right;
@@ -208,15 +310,12 @@ header {
     box-sizing: border-box;
     position: relative;
 }
-
 #main-block img{
    padding: 0px;
    margin: 0px;
    float:right;
    width:50vw;
 }
-
-
 #side-block{
     float: left;
     width:50vw;
@@ -225,38 +324,34 @@ header {
     box-sizing: border-box;
     position: relative;
 }
-
 #side-block h1{
-font-family: Soligant, serif;
+font-family: "Soligant", serif;
 text-align: center;
 font-weight: normal;
 font-size: 65px;
 line-height: 60px;
 padding: 100px;
-  
 }
-
 #side-block a{
-    background-color: #BDCAC55;
+    background-color: #BDCAC5;
     color: #FCF1EF;
     text-decoration: none;
     font-size: 16px;
     padding: 15px 20px;
     border: none;
     position:absolute;
-    left:250px;
+    left: 375px;
 }
-
 #box-1{
-    height: auto;
+    height: 620px;
     background-color: #BDCAC5;
     color:#fff;
     font-size: 40px;
     text-align: center;
     padding: 40px;
     line-height: normal;
+    font-family: Arial, Helvetica, sans-serif;
 }
-    
 #side-block-1{
     float: left;
     width:50vw;
@@ -265,18 +360,17 @@ padding: 100px;
     box-sizing: border-box;
     position: relative;
 }
-
 #side-block-1 h1{
-font-family: Soligant, serif;
+  height: 620px;
+font-family: "Soligant", serif;
 text-align: center;
 font-weight: normal;
 font-size: 65px;
 line-height: 60px;
-padding: 100px; 
+padding: 100px;
 }
-
 #side-block-1 a{
-    background-color: #BDCAC55;
+    background-color: #BDCAC5;
     color: #FCF1EF;
     text-decoration: none;
     font-size: 16px;
@@ -286,58 +380,49 @@ padding: 100px;
     left:250px;
 }
 #main-block-1{
-    
-    
-    border-right: 1px solid; 
+    border-right: 1px solid;
     float: left;
     width:50%;
     box-sizing: border-box;
     position: relative;
 }
-
 #main-block-1 img{
    padding: 0px;
    margin: 0px;
    float:left;
    width:50vw;
 }
-
 #main-block-2{
-    border-right: 1px solid; 
+    border-right: 1px solid;
     float: right;
     width:50%;
     box-sizing: border-box;
     position: relative;
 }
-
 #main-block-2 img{
    padding: 0px;
    margin: 0px;
    float:right;
    width:50vw;
 }
-
-
 #side-block-2{
     float:left;
     width:50vw;
     background-color: #FCF1EF;
     padding:0;
     box-sizing: border-box;
-    position: relative; 
+    position: relative;
 }
-
 #side-block-2 h1{
 font-family: Soligant, serif;
 text-align: center;
 font-weight: normal;
 font-size: 65px;
 line-height: 60px;
-padding: 100px; 
+padding: 100px;
 }
-
 #side-block-2 a{
-    background-color: #BDCAC55;
+    background-color: #BDCAC5;
     color: #FCF1EF;
     text-decoration: none;
     font-size: 16px;
@@ -346,7 +431,6 @@ padding: 100px;
     position:absolute;
     left:250px;
 }
-  
 #box-2{
     height: auto;
     background-color: #BDCAC5;
@@ -355,9 +439,8 @@ padding: 100px;
     text-align: center;
     padding: 40px;
     line-height: normal;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-
 #main-block-3{
     float: left;
     width:50%;
@@ -365,7 +448,6 @@ padding: 100px;
     position: relative;
     margin-top: 100px;
 }
-
 #main-block-3 img{
     padding: 0px;
     margin: 0px;
@@ -373,7 +455,6 @@ padding: 100px;
     width:50vw;
     height: 100vh;
  }
-
 #side-block-3{
     float: right;
     width:50vw;
@@ -383,18 +464,16 @@ padding: 100px;
     position: relative;
     margin-top: 100px;
 }
-
 #side-block-3 h2{
-font-family: Soligant, serif;
+font-family: Arial, Helvetica, sans-serif;
 text-align: center;
 font-weight: normal;
 font-size: 65px;
 line-height: 60px;
 padding: 100px;
 }
-
 #side-block-3 a{
-    background-color: #BDCAC55;
+    background-color: #BDCAC5;
     color: #FCF1EF;
     text-decoration: none;
     font-size: 16px;
@@ -403,14 +482,12 @@ padding: 100px;
     position:absolute;
     left:250px;
 }
-  
 #main-block-4{
     float: left;
     width:100%;
     box-sizing: border-box;
     position: relative;
 }
-
 #main-block-4 img{
     padding: 0px;
     margin-top: 100px;
@@ -418,11 +495,9 @@ padding: 100px;
     width: 100%;
     height: 70vh;
  }
-
-
 #main-footer{
     background: #BDCAC5;
-    color: #FCF1EF7;
+    color: #FCF1EF;
     text-align: center;
     padding: 100px;
 }
@@ -477,5 +552,3 @@ padding: 40px;
   clear:both;
   overflow:auto;
 }
-
-
