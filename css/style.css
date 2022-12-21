@@ -244,6 +244,25 @@ display: block;
 font-family: "Soligant", sans-serif;
 }
 
+.mapouter {
+margin-top:50px;
+position: relative;
+text-align: right;
+width: 100%;
+height: 620px;
+}
+            
+.gmap_canvas {
+overflow: hidden;
+background: none !important;
+width: 100%;
+height: 620px;
+}
+            
+.gmap_iframe {
+height: 620px !important;
+}
+
 /*=====Main Page=====*/
 
 
@@ -518,17 +537,11 @@ padding: 100px;
     height: 70vh;
  }
 #main-footer{
-    background: #BDCAC5;
-    color: #FCF1EF;
-    text-align: center;
-    padding: 10px;
-}
-
-#second-footer{
-    background: #FCF1EF;
-    color: #BDCAC5;
-    text-align: center;
-    padding: 100px;
+  margin-top: 50px;
+  background: #BDCAC5;
+  color: #FCF1EF;
+  text-align: center;
+  padding: 10px;
 }
 
 /* Service page  CSS */
@@ -554,7 +567,6 @@ padding: 40px;
   align-items: left;
   text-align: center;
   font-size: 25px;
-
 }
 
 #photo2 {
