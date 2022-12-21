@@ -296,9 +296,9 @@ font-family: "Soligant", sans-serif;
     justify-content: center;
 }
 .container-1{
-    width: 100%;
-    margin: auto;
-    overflow: hidden;
+    width: 50%;
+    height: auto;
+   
 }
 .clr{
     clear: both;
@@ -324,6 +324,27 @@ font-family: "Soligant", sans-serif;
     box-sizing: border-box;
     position: relative;
 }
+
+#side-block-text{
+  font-style: italic;
+  float: left;
+  width:50%;
+  text-align: center;
+  display: block;
+}
+
+#side-block-text h3{
+    float: left;
+    width:50vw;
+    background-color: #FCF1EF;
+    padding:20px;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    font-size: 25px;
+    color:#556945;
+}
+
 #side-block h1{
 font-family: "Soligant", serif;
 text-align: center;
@@ -343,14 +364,15 @@ padding: 100px;
     left: 375px;
 }
 #box-1{
+  width: 50%;
     height: 620px;
     background-color: #BDCAC5;
     color:#fff;
     font-size: 40px;
     text-align: center;
     padding: 40px;
-    line-height: normal;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 #side-block-1{
     float: left;
@@ -506,36 +528,37 @@ padding: 100px;
     background: #FCF1EF;
     color: #BDCAC5;
     text-align: center;
-    padding: 10px;
+    padding: 100px;
 }
 
 /* Service page  CSS */
 
-.photo1{
-  flex: 50%; /* Set the width of the sidebar */
-  padding: 40px; /* Some padding */
-  background-color: white;
+#photo1{
+  width: 70%; /* Set the width of the sidebar */
+   /* Some padding */
 }
 
-.servicepagesideblock {
-  flex: 50%; /* Set the width of the main content */
-  background-color: white; /* White background color */
-  padding: 40x; /* Some padding */
-  align-content: left;
+#servicepagesideblock {
+  width: 50%; /* Set the width of the main content */
+  text-align: center;
+  font-size: 25px;
 }
 
-.secondbox{
+#secondbox{
 align-items: center;
 padding: 40px;
 }
-.servicepagesideblock1 {
-  flex: 50%; /* Set the width of the main content */
+#servicepagesideblock1 {
+  width: 50%; /* Set the width of the main content */
   padding: 40x; /* Some padding */
   align-items: left;
+  text-align: center;
+  font-size: 25px;
+
 }
 
-.photo2 {
-  flex: 50%; /* Set the width of the sidebar */
+#photo2 {
+  width: 50%; /* Set the width of the sidebar */
   padding: 20px; /* Some padding */
 }
 
@@ -546,6 +569,12 @@ padding: 40px;
   padding: 20px;
 }
 
+.column_1 {
+  float: left;
+  width: 33%;
+  padding: 40px;
+}
+
 /* Clear floats after image containers */
 .row::after {
   content: "";
@@ -554,8 +583,3 @@ padding: 40px;
 }
 
 *{transition:all 0.3s ease-in-out;}
-
-.container{
-  clear:both;
-  overflow:auto;
-}
