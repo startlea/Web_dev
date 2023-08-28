@@ -1,38 +1,39 @@
 body{
     background:#FCF1EF;
     color: #556945;
-    font-family: Soligant,serif;
+    font-family: "Soligant",serif;
     font-size: 16px;
     font-weight: normal;
-    margin:0 ;
+    padding: 20px;
 }
 
 @font-face {
     font-family: "Soligant", sans-serif;
-    src: url(Soligant.ttf);
+    src: url(.font/Soligant.ttf);
 }
 
-body {
-  background-color: #FCF1EF;
-  padding: 20px;
-  font-family: "Soligant", sans-serif;
-  background: #FCF1EF;
+.container{
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
 }
-
 
 /*=====Nav bar=====*/
 
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 0px;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 10%;
+  padding: 10px;
   background-color: #fff;
 }
 
@@ -249,18 +250,18 @@ margin-top:50px;
 position: relative;
 text-align: right;
 width: 100%;
-height: 620px;
+height: 400px;
 }
             
 .gmap_canvas {
 overflow: hidden;
 background: none !important;
 width: 100%;
-height: 620px;
+height: 400px;
 }
             
 .gmap_iframe {
-height: 620px !important;
+height: 400px !important;
 }
 
 /*=====Main Page=====*/
@@ -306,16 +307,9 @@ height: 620px !important;
     color: #556945;
 }
 
-.container{
-    width: 100%;
-    margin: auto;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 .container-1{
-    width: 50%;
+    width: 100%;
     height: auto;
    
 }
@@ -325,7 +319,7 @@ height: 620px !important;
 
 #main-block{
     float: right;
-    width:50%;
+    width:100%;
     box-sizing: border-box;
     position: relative;
 }
@@ -337,24 +331,24 @@ height: 620px !important;
 }
 #side-block{
     float: left;
-    width:50vw;
-    background-color: #FCF1EF;
+    width:100%;
+    height: 100%;
+    background-color: #fff;
     padding:0;
-    box-sizing: border-box;
     position: relative;
 }
 
 #side-block-text{
   font-style: italic;
   float: left;
-  width:50%;
+  width:100%;
   text-align: center;
   display: block;
 }
 
 #side-block-text h3{
     float: left;
-    width:50vw;
+    width:100%;
     background-color: #FCF1EF;
     padding:20px;
     box-sizing: border-box;
@@ -380,22 +374,22 @@ padding: 100px;
     padding: 15px 20px;
     border: none;
     position:absolute;
-    left: 375px;
+    margin-left: 375px;
 }
 #box-1{
-  width: 50%;
-    height: 620px;
-    background-color: #BDCAC5;
-    color:#fff;
-    font-size: 40px;
-    text-align: center;
-    padding: 40px;
-    font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: auto;
+  background-color: #BDCAC5;
+  color:#fff;
+  font-size: 40px;
+  text-align: center;
+  padding: 40px;
+  font-family: Arial, Helvetica, sans-serif;
 
 }
 #side-block-1{
     float: left;
-    width:50vw;
+    width:100%;
     background-color: #FCF1EF;
     padding:0;
     box-sizing: border-box;
@@ -421,121 +415,16 @@ padding: 100px;
     left:250px;
 }
 #main-block-1{
-    border-right: 1px solid;
     float: left;
-    width:50%;
-    box-sizing: border-box;
+    width:100%;
     position: relative;
 }
 #main-block-1 img{
    padding: 0px;
    margin: 0px;
-   float:left;
-   width:50vw;
-}
-#main-block-2{
-    border-right: 1px solid;
-    float: right;
-    width:50%;
-    box-sizing: border-box;
-    position: relative;
-}
-#main-block-2 img{
-   padding: 0px;
-   margin: 0px;
    float:right;
-   width:50vw;
+   width:100%;
 }
-#side-block-2{
-    float:left;
-    width:50vw;
-    background-color: #FCF1EF;
-    padding:0;
-    box-sizing: border-box;
-    position: relative;
-}
-#side-block-2 h1{
-font-family: Soligant, serif;
-text-align: center;
-font-weight: normal;
-font-size: 65px;
-line-height: 60px;
-padding: 100px;
-}
-#side-block-2 a{
-    background-color: #BDCAC5;
-    color: #FCF1EF;
-    text-decoration: none;
-    font-size: 16px;
-    padding: 15px 20px;
-    border: none;
-    position:absolute;
-    left:250px;
-}
-#box-2{
-    height: auto;
-    background-color: #BDCAC5;
-    color:#fff;
-    font-size: 40px;
-    text-align: center;
-    padding: 40px;
-    line-height: normal;
-    font-family: Arial, Helvetica, sans-serif;
-}
-#main-block-3{
-    float: left;
-    width:50%;
-    box-sizing: border-box;
-    position: relative;
-    margin-top: 100px;
-}
-#main-block-3 img{
-    padding: 0px;
-    margin: 0px;
-    float:left;
-    width:50vw;
-    height: 100vh;
- }
-#side-block-3{
-    float: right;
-    width:50vw;
-    background-color: #FCF1EF;
-    padding:0;
-    box-sizing: border-box;
-    position: relative;
-    margin-top: 100px;
-}
-#side-block-3 h2{
-font-family: Arial, Helvetica, sans-serif;
-text-align: center;
-font-weight: normal;
-font-size: 65px;
-line-height: 60px;
-padding: 100px;
-}
-#side-block-3 a{
-    background-color: #BDCAC5;
-    color: #FCF1EF;
-    text-decoration: none;
-    font-size: 16px;
-    padding: 15px 20px;
-    border: none;
-    position:absolute;
-    left:250px;
-}
-#main-block-4{
-    float: left;
-    width:100%;
-    box-sizing: border-box;
-    position: relative;
-}
-#main-block-4 img{
-    padding: 0px;
-    margin-top: 100px;
-    float:left;
-    width: 100%;
-    height: 70vh;
- }
 #main-footer{
   margin-top: 50px;
   background: #BDCAC5;
@@ -546,31 +435,22 @@ padding: 100px;
 
 /* Service page  CSS */
 
-#photo1{
-  width: 70%; /* Set the width of the sidebar */
-   /* Some padding */
-}
-
-#servicepagesideblock {
-  width: 50%; /* Set the width of the main content */
+#side_block_0 {
+  width: 100%; 
   text-align: center;
   font-size: 25px;
+  display: flex;
+  align-items: right;
 }
 
-#secondbox{
-align-items: center;
-padding: 40px;
-}
-#servicepagesideblock1 {
-  width: 50%; /* Set the width of the main content */
-  padding: 40x; /* Some padding */
-  align-items: left;
+#side_block_1 {
+  width: 100%; /* Set the width of the main content */
   text-align: center;
   font-size: 25px;
 }
 
 #photo2 {
-  width: 50%; /* Set the width of the sidebar */
+  width: 100%; /* Set the width of the sidebar */
   padding: 20px; /* Some padding */
 }
 
@@ -582,11 +462,15 @@ padding: 40px;
 }
 
 .column_1 {
-  float: left;
-  width: 33%;
+  float: center;
+  width: 50%;
   padding: 40px;
 }
 
+.column_2 {
+  width: 100%;
+  padding: 40px;
+}
 /* Clear floats after image containers */
 .row::after {
   content: "";
